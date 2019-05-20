@@ -1,0 +1,6 @@
+<p>name : <%= @task.name %> </p>
+<p>completed : <%= @task.done %> </p>
+<p>description: <%= @task.description %> </p>
+<%= link_to "Edit", edit_path(@task.id) %>
+<%= link_to "Back to list", new_path %>
+<%=  %>

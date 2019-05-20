@@ -1,0 +1,9 @@
+<h1>My tasks</h1>
+<% @tasks.each do |task| %>
+<ul>
+  <li><%= task.done? ? "done : " : "not done : " %> <%= link_to "#{task.name}", show_path(task.id) %> <%= link_to "remove", destroy_path %></li>
+</ul>
+<% end %>
+<%= link_to "New", new_path %>
+
+
